@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let weight = +prompt("Can nang  ");
+        let height = +prompt("Chieu cao  ");
+        let BMI = weight/(height*height);
+        if(BMI < 18.5){
+            console.log("gay");
+        }
+        else if(18.5 <= BMI && BMI <= 24.9){
+            console.log("Binh thuong");
+        }
+        else if(BMI >= 25){
+            console.log("Thua can")
+            if(25 <= BMI && BMI <= 29.9){
+                console.log("Tien beo phi")
+            }
+            else if(30 <= BMI && BMI <=34.9){
+                console.log("Beo phi cap I");
+            }
+            else if(35 <= BMI && BMI <= 39.9){
+                console.log("Beo phi cap II");
+            }
+            else{
+                console.log("Beo phi cap III");
+            }
+        }
+        else{
+            console.log("Ko hop le");
+        }</script>
+</body>
+</html>
